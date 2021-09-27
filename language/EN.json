@@ -82,7 +82,7 @@
             "RESTART_DESC": "Restart WhatsAsena",
             "RESTART_MSG": "```Restarting...```",
             "SHUTDOWN_DESC": "Shutdown WhatsAsena",
-            "SHUTDOWN_MSG": "```Shutting down ⛔```",
+            "SHUTDOWN_MSG": "```Njn pova bye 👋😴😴```",
             "DYNO_DESC": "Check heroku dyno usage",
             "DYNO_TOTAL": "```Total Quota```",
             "DYNO_USED": "```Quota used```",
@@ -217,7 +217,7 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```Converting..✨️```"
+            "DOWNLOADING": "```Converting⌛..✨️```"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
