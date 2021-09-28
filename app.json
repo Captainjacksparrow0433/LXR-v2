@@ -1,6 +1,6 @@
 {
-    "name": "Amalser_v2 ",
-    "description": "Amalser_v2 is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
+    "name": "Lxr-v2 ",
+    "description": "Lxr_v2 is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
     "logo": "https://i.imgur.com/yCYYyEJ.jpeg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
     "repository": "https://github.com/cyberchekuthan/Amalser_v2",
@@ -18,7 +18,7 @@
         },
          "YT_PASSWORD": {
             "description": "enter the password, to get password watch https://youtu.be/fd0KPblop-k .",
-            "required": true
+            "required": false
         },
         "LANGUAGE": {
             "description": "Bot language.English => en",
