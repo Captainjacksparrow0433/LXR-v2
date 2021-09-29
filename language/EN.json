@@ -201,7 +201,7 @@
             "RATING": "RATING",
             "UPLOADING_SONG": "*Uploading*",
             "VIDEO_DESC": "Downloads video from YouTube.",
-            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
+            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video yt link```",
             "DOWNLOADING_VIDEO": "*Downloading*",
             "UPLOADING_VIDEO": "*Uploading*",
             "LOADING": "*Downloading video*",
@@ -246,7 +246,7 @@
             "INVALID_HEROKU": "*❌ Your Heroku app name or api key wrong!*",
             "UPDATED": "*Updated ✅️*",
             "UPDATED_LOCAL": "*✅ Updated!*",
-            "AFTER_UPDATE": "*Amalser Restarting ✅️*",
+            "AFTER_UPDATE": "*Jacki Restarting ✅️*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
