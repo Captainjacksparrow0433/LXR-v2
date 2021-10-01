@@ -17,7 +17,7 @@ Asena.addCommand({pattern: 'insta ?(.*)', fromMe: false, desc: "Downloads from i
     var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
     
    const { status, type, data } = await instagram(match[1], 'julie')
-    if (!status) return await message.sendMessage('✅️Example : https://www.instagram.com/invites/contact/?i=1sum92np5vezu&utm_content=kb9z3yu\n\n*Change /reel/ to /p/ Then give Command .insta*\n\n*Any doubt ask to my owner*')
+    if (!status) return await message.sendMessage('✅️Example : https://www.instagram.com/invites/contact/?i=1sum92np5vezu&utm_content=kb9z3yu\n\n*Change /reel/ to /p/ Then give Command .insta*\n\n*Any doubt ask to my owner*\n\n*contact*\n\n http://wa.me/919061103727')
 
     reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted: message.data });
     
