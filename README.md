@@ -13,7 +13,7 @@
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/Captainjacksparrow0433">LXR-v2</a> to make it public
+Project created by <a href="https://github.com/Captainjacksparrow0433">ᴅͥᴇͭᴠᷤɪᷟʟͤ</a> to make it public
     <br>
        | © |
         Reserved |
@@ -27,6 +27,10 @@ Project created by <a href="https://github.com/Captainjacksparrow0433">LXR-v2</a
 ##  Ask me in my pm for password 👇
 
 http://wa.me/919061103727
+
+### Bot 👇
+
+http://wa.me/919074681684
 
   ### Simple Method
   
@@ -73,7 +77,7 @@ $ node julie.js
 Click WA logo to Join Support Group 👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/Lvtl7GqERfP19Na6M2wndX)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/LeSrj5jGdRaLaI0CFYc1GV)
   <div align="center">
        
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=farhan-dqz&repo=Julie-Mwol&theme=nightowl)](https://github.com/farhan-dqz/Julie-Mwol)
@@ -90,7 +94,7 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 ## Developers
   <div align="center">
     
-  [![Farhan-Dqz](https://github.com/farhan-dqz.png?size=100)](https://github.com/farhan-dqz) | [![AMALSER](https://github.com/cyberchekuthan.png?size=100)](https://github.com/cyberchekuthan) |  [![TOXIC4L!3N](https://github.com/Alien-alfa.png?size=100)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
+  [![Farhan-Dqz](https://github.com/farhan-dqz.png?size=100)](https://github.com/farhan-dqz) | [![AMALSER](https://github.com/Captainjacksparrow0433/LXR-v2/blob/master/photo/amalser.png)](https://github.com/cyberchekuthan) |  [![TOXIC4L!3N](https://github.com/Alien-alfa.png?size=100)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
 ----|----|----|----
 [farhan-dqz](https://github.com/farhan-dqz) | [ᴅͥᴇͭᴠᷤɪᷟʟͤ](https://github.com/Captainjacksparrow0433) | [TOXIC4L!3N](https://github.com/AI-VIKI) | [afnanplk](https://github.com/afnanplk) 
 Developer, Base, Bug Fixes, Modules| Re-Developer, Bug Fixes, Modules, Commits |  Modifiying  as   public | Bug Fixes, Modules 
