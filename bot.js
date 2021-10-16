@@ -151,8 +151,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
         console.log(
             chalk.green.bold('Jacki working 💌')
-            await conn.sendMessage(conn.user.jid, "Jacki working", MessageType.text);
-            await conn.sendMessage(conn.user.jid, "``` NO " + config.WORKTYPE + "```" , MessageType.text);
         );
     });
     
