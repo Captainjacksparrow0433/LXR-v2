@@ -133,6 +133,7 @@ Asena.addCommand({ pattern: 'show ?(.*)', fromMe: false , desc: "Get info relate
            status,
 	  officialSite,
 	  summary,
+          https://t.me/filmboxcommunity,
         } = response.data[0].show
 
    
