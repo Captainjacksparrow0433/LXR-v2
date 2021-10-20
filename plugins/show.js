@@ -133,11 +133,10 @@ Asena.addCommand({ pattern: 'show ?(.*)', fromMe: false , desc: "Get info relate
            status,
 	  officialSite,
 	  summary,
-          https://t.me/filmboxcommunity,
         } = response.data[0].show
 
    
-        const msg = `*${"Name"}*: ${name}\n*${"Type"}*: ${type}\n*${"Type"}*: ${status}\n*${"Summary"}*: ${summary}\n*${"Official Site"}*: ${officialSite}\n*${"To get the series"}*: ${https://t.me/filmboxcommunity}`
+        const msg = `*${"Name"}*: ${name}\n*${"Type"}*: ${type}\n*${"Type"}*: ${status}\n*${"Summary"}*: ${summary}\n*${"Official Site"}*: ${officialSite}`
        
        await message.client.sendMessage(message.jid, msg , MessageType.text);
       })
