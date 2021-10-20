@@ -41,3 +41,21 @@ Neotro.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (a
        await message.client.sendMessage(message.jid, button, MessageType.listMessage)
     
     }));
+Neotro.addCommand({pattern: 'show', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+// send a list message!
+    const rows = [
+        {title: '🍿Movies and series request group', description: "© Film Box Community 🍿\n\n\n\n*A Group For Movie Lovehrs❤️*\n*Download Your Favorite Movies and series From This Group🎬*\n*Biggest Collection Of Foreign And Indian Movies🍿*\n\n\n\n*https://t.me/filmboxcommunity*\n*https://t.me/filmboxcommunity*\n*https://t.me/filmboxcommunity*\n\n\n\n © Film Box Community 🍿"},
+       ]
+       
+       const sections = [{title: "ʟɪɴᴋ  ❤️", rows: rows}]
+       
+       const button = {
+        buttonText: 'ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ʟɪɴᴋ',
+        description: " ᴍᴏᴠɪᴇ & sᴇʀɪᴇs ɢʀᴏᴜᴘ🔰",
+        sections: sections,
+        listType: 1
+       }
+       
+       await message.client.sendMessage(message.jid, button, MessageType.listMessage)
+    
+    }));
