@@ -150,7 +150,9 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('Jacki working 💌')
+            chalk.green.bold('ᴊᴀᴄᴋɪ ᴡᴏʀᴋɪɴɢ ᴏɴ ' + config.WORKTYPE + ' ᴍᴏᴅᴇ 🍃'));
+            await conn.sendMessage(conn.user.jid, "Jᴀᴄᴋɪ ᴀʟʟ sᴇᴛ ✅️", MessageType.text);
+            await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
         );
     });
     
