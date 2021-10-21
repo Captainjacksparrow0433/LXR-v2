@@ -1,5 +1,4 @@
 /* Copyright (C) 2020 Yusuf Usta.
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
@@ -110,13 +109,13 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         console.log(
             chalk.blueBright.italic('Confirming password...')
         );
-        if (config.AFPLK == 'LXRJACKI' || config.AFPLK == 'lxrjacki' || config.AFPLK == 'Lxrjacki' || config.AFPLK == 'pinky') {
+        if (config.AFPLK == 'AFAMK' || config.AFPLK == 'afamk' || config.AFPLK == 'Afamk' || config.AFPLK == 'pinky') {
         //thanks to afnanplk
         console.log(
             chalk.green.bold('thanks for watching -key cofirmed-')
         );
          }
-         else if (config.AFPLK !== 'LXRJACKI' || config.AFPLK !== 'lxrjacki' || config.AFPLK !== 'Lxrjacki' || config.AFPLK !== 'pinky') {
+         else if (config.AFPLK !== 'AFAMK' || config.AFPLK !== 'afamk' || config.AFPLK !== 'Afamk' || config.AFPLK !== 'pinky') {
          console.log(
             chalk.red.bold('make sure you have typed the correct password'));
          throw new Error("Password Error ⚠⚠ ");         
@@ -150,8 +149,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('Jacki working 💌')
-            await conn.sendMessage(conn.user.jid, "Jᴀᴄᴋɪ ᴀʟʟ sᴇᴛ ✅️", MessageType.text);
+            chalk.green.bold('𝙰𝚖𝚊𝚕𝚜𝚎𝚛 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 ' + config.WORKTYPE + ' 𝚗𝚘𝚠 🍃'));
+            await conn.sendMessage(conn.user.jid, "𝐀𝐦𝐚𝐥𝐬𝐞𝐫 ɪꜱ 𝐚𝐥𝐥 𝐬𝐞𝐭 ✅️", MessageType.text);
             await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
     });
     
@@ -165,48 +164,48 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
 
-        if (config.WELCOME == 'pp' || config.WELCOME == 'Pp' || config.WELCOME == 'PP' || config.WELCOME == 'pP' ) {
-            if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-                    // Thanks to Lyfe
-                    var gb = await getMessage(msg.key.remoteJid, 'goodbye');
-                    if (gb !== false) {
-                        let pp
-                        try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
-                    }
-                    return;
-                } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-                    // welcome
-                    var gb = await getMessage(msg.key.remoteJid);
-                    if (gb !== false) {
-                       let pp
-                        try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
-                    }
-                    return;
-                }
+        if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+
+            var gb = await getMessage(msg.key.remoteJid, 'goodbye');
+            if (gb !== false) {
+                if (gb.message.includes('{pp}')) {
+                let pp 
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) }); });                           
+            } else if (gb.message.includes('{gif}')) {
+                //created by afnanplk
+                    var plkpinky = await axios.get(config.GIF_BYE, { responseType: 'arraybuffer' })
+                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
+            } else {
+                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name), MessageType.text);
+              } 
+            }//thanks to farhan      
+            return;
+        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+            // welcome
+             var gb = await getMessage(msg.key.remoteJid);
+            if (gb !== false) {
+                if (gb.message.includes('{pp}')) {
+                let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                    //created by afnanplk
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) }); });                           
+            } else if (gb.message.includes('{gif}')) {
+                var plkpinky = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
+                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
+            } else {
+                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name), MessageType.text);
             }
-            else if (config.WELCOME == 'gif' || config.WELCOME == 'Gif' || config.WELCOME == 'GIF' || config.WELCOME == 'GIf' ) {
-            if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-                    // Thanks to ichus-Sophia
-                    var gb = await getMessage(msg.key.remoteJid, 'goodbye');
-                    if (gb !== false) {
-                        var sewqueenimage = await axios.get(config.BYE_GIF, { responseType: 'arraybuffer' })
-                        await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
-                    }
-                    return;
-                } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-                    // Thanks to Ravindu Manoj
-                    var gb = await getMessage(msg.key.remoteJid);
-                    if (gb !== false) {
-                    var sewqueenimage = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
-                    await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
-                    }
-                    return;
-                }
-             }
+          }         
+            return;                               
+    }
 
         events.commands.map(
             async (command) =>  {
@@ -276,8 +275,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ Jacki ~______~*' +
-                                    '\n*🌀 Joins this group for latest movies: https://t.me/filmboxcommunity*' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ Amalser ~______~*' +
+                                    '\n*🌀 Subcribe this channel other wise chance to get erorr: https://youtube.com/channel/UCT7x7a4HJ72bbMNx49Z9DTA*' +
                                     '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
                             }
