@@ -153,7 +153,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             chalk.green.bold('Jacki working 💌')
             await conn.sendMessage(conn.user.jid, "Jᴀᴄᴋɪ ᴀʟʟ sᴇᴛ ✅️", MessageType.text);
             await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
-        );
     });
     
     conn.on('chat-update', async m => {
