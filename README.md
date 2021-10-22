@@ -1,6 +1,6 @@
 <div align="center">
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Welcome+to+Lxr_v2+WA+Bot+repo;Created+by+Devil;This+is+a+Bgm+stickerbot;With+more+features)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=FFFFFF&lines=Welcome+to+Lxr_v2+WA+Bot+repo;Created+by+Devil;This+is+a+Bgm+stickerbot;With+more+features)](https://git.io/typing-svg)
 #### TOTAL REPO VIEWS📍
 ![Visitor Count](https://profile-counter.glitch.me/Captainjacksparrow0433/count.svg)
 
@@ -83,10 +83,15 @@ Click WA logo to Join Support Group 👇
 <br>
   [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/LeSrj5jGdRaLaI0CFYc1GV)
   <div align="center">
-       
+
+### Movie and series Group🔗👇
+
+  <a href="https://t.me/filmboxcommunity"><img src="https://img.shields.io/badge/Telegram-Click%20here%20to%20join-blue.svg?logo=telegram"></a>
+
+  
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=farhan-dqz&repo=Julie-Mwol&theme=nightowl)](https://github.com/farhan-dqz/Julie-Mwol)
   </div>
-    
+   
 ### ⚠️ Warning! 
 ```
 Due to Userbot; Your WhatsApp account may be banned.
