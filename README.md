@@ -1,6 +1,9 @@
 <div align="center">
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Welcome+to+Lxr_v2+WA+Bot+repo;Created+by+Devil;This+is+a+Bgm+stickerbot;With+more+features)](https://git.io/typing-svg)
+#### TOTAL REPO VIEWS📍
+![Visitor Count](https://profile-counter.glitch.me/Captainjacksparrow0433/count.svg)
+
 
  </a>
 </p>
