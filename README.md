@@ -13,7 +13,7 @@
 <img src="https://telegra.ph/file/ce038342b49656b7cef44.jpg" alt="GIF" width="300" height="250"/>
 </p>
   <p align="center">
-<a href="https://github.com/Captainjacksparrow0433"><img title="Author" src="https://img.shields.io/badge/Author-Abin-Captainjacksparrow0433/LXR-v2?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/Captainjacksparrow0433"><img title="Author" src="https://img.shields.io/badge/Author-Abin-Captainjacksparrow0433/LXR-v2?color=red&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
@@ -28,9 +28,9 @@ Project created by <a href="https://github.com/Captainjacksparrow0433">ᴅͥᴇ�
 <div align="center"> 
 
 
-##  Ask me in my pm for password 👇
+##  password 👇
 
-http://wa.me/919061103727
+Lxrjacki
 
 ### Bot 👇
 
@@ -47,8 +47,8 @@ http://wa.me/919074681684
 GET QR
 $ apt install git
 $ apt install nodejs --fix-missing
-$ git clone https://github.com/cyberchekuthan/Amalser_v2
-$ cd Amalser_v2
+$ git clone https://github.com/Captainjacksparrow0433/LXR-v2
+$ cd LXR-v2
 $ npm install @adiwajshing/baileys
 $ npm install chalk
 $ node julie.js
@@ -56,8 +56,8 @@ $ node julie.js
       
 ```js
 SETUP
-$ git clone https://github.com/cyberchekuthan/Amalser_v2
-$ cd Amalser_v2
+$ git clone https://github.com/Captainjacksparrow0433/LXR-v2
+$ cd LXR-v2
 $ npm i
 $ node julie.js
 ```
