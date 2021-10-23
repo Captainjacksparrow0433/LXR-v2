@@ -1563,13 +1563,6 @@ Asena.addCommand({pattern: 'rename ?(.*)', onlyGroup: true, fromMe: true,desc: A
 
 ));
 
-Asena.addCommand({pattern: 'revoke', fromMe: true, onlyGroup: true, desc: Lang.REVOKE_DESC}, (async (message, match) => {    
-    var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
-    await message.client.revokeInvite(message.jid)
-    await message.client.sendMessage(message.jid, jul.REVOKED, MessageType.text);
-}))
-
 module.exports = {
     checkImAdmin: checkImAdmin
 };
