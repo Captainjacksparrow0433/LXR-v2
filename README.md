@@ -13,7 +13,7 @@
 <img src="https://telegra.ph/file/ce038342b49656b7cef44.jpg" alt="GIF" width="300" height="250"/>
 </p>
   <p align="center">
-<a href="https://github.com/Captainjacksparrow0433"><img title="Author" src="https://img.shields.io/badge/Author-Abin-Captainjacksparrow0433/LXR-v2?color=red&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/captainjacksparrow0433"><img title="Author" src="https://img.shields.io/badge/Author-Devil-cyberchekuthan/Amalser_v2?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
