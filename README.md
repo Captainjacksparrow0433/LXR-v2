@@ -89,7 +89,7 @@ Click WA logo to Join Support Group 👇
   <a href="https://t.me/filmboxcommunity"><img src="https://img.shields.io/badge/Telegram-Click%20here%20to%20join-blue.svg?logo=telegram"></a>
 
   
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=farhan-dqz&repo=Julie-Mwol&theme=nightowl)](https://github.com/farhan-dqz/Julie-Mwol)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CaptainJacksparrow0433&repo=LXR-v2&theme=nightowl)](https://github.com/Captainjacksparrow0433/LXR-v2)
   </div>
    
 ### ⚠️ Warning! 
