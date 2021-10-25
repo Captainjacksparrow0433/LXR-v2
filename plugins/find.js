@@ -33,7 +33,7 @@ Asena.addCommand(
     let buff = await audioCut(location, 0, 15, "findo");
     const data = await IdentifySong(buff);
     if (!data) return;
-    if (!data.status) return await message.sendMessage(Not find);
+    if (!data.status) return await message.sendMessage(not find);
     return await message.sendMessage(
         FIND_MSG.format(
         data.data.title,
