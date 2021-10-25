@@ -7,11 +7,11 @@ const {
   getBuffer,
   getJson,
   IdentifySong,
-} = require("../Utilis/download");
+} = require("../download");
 const Language = require("../language");
 const Lang = Language.getString("updown");
-const { emoji } = require("../Utilis/Misc");
-const { audioCut } = require("../Utilis/fFmpeg");
+const { emoji } = require("../Misc");
+const { audioCut } = require("../fFmpeg");
 
 const FIND_MSG = "```Title    : {}\nArtists  : {}\nGenre    : {}\nAlbum    : {}\nReleased : {}```"
 
