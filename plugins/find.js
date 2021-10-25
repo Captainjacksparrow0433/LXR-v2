@@ -26,14 +26,14 @@ Asena.addCommand(
       !message.reply_message ||
       (!message.reply_message.audio && !message.reply_message.video)
     )
-      return await message.sendMessage(*searching......*);
+      return await message.sendMessage(searching........);
     let location = await message.reply_message.downloadAndSaveMediaMessage(
       "find"
     );
     let buff = await audioCut(location, 0, 15, "findo");
     const data = await IdentifySong(buff);
     if (!data) return;
-    if (!data.status) return await message.sendMessage(*Not find*);
+    if (!data.status) return await message.sendMessage(Not find);
     return await message.sendMessage(
         FIND_MSG.format(
         data.data.title,
