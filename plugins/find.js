@@ -13,6 +13,15 @@ const Lang = Language.getString("updown");
 const { emoji } = require("../Utilis/Misc");
 const { audioCut } = require("../Utilis/fFmpeg");
 
+const NOT_FOUND = "*Not found!*"
+
+const FIND_NEED_REPLY = "*Reply to a video or audio*"
+
+const FIND_MSG = "```Title    : {}\nArtists  : {}\nGenre    : {}\nAlbum    : {}\nReleased : {}```"
+
+const FIND_DESC = "Identify song from replied video or audio."
+
+
 
 Asena.addCommand(
   { pattern: "find", fromMe: true, desc: Lang.FIND_DESC },
