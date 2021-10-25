@@ -1,5 +1,5 @@
 const { MessageType, Mimetype } = require("@adiwajshing/baileys");
-const Asena = require("../Utilis/events");
+const Asena = require("../events");
 // const config = require('../config');
 const moment = require("moment");
 const {
