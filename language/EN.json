@@ -73,6 +73,12 @@
             "TERM_DESC": "Allows to run the command on the server's shell.",
             "GIVE_ME_CODE": "*Give me a code!*"
         },
+        "find": {
+            "NOT_FOUND": "*Not found!*",
+            "FIND_NEED_REPLY": "*Reply to a video or audio*",
+            "FIND_MSG": "```Title    : {}\nArtists  : {}\nGenre    : {}\nAlbum    : {}\nReleased : {}```",
+            "FIND_DESC": "Identify song from replied video or audio.",
+        },
         "nekobin": {
             "NEKO_DESC": "Replied messages will be added to nekobin.com.",
             "NEED_REPLY": "```Please reply to a message!```",
