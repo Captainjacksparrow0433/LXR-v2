@@ -6,8 +6,7 @@ const {
   getName,
   getBuffer,
   getJson,
-  IdentifySong,
-} = require("../download");
+  IdentifySong,;
 const Language = require("../language");
 const Lang = Language.getString("updown");
 const { emoji } = require("../Misc");
