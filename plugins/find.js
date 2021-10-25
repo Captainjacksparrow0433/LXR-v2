@@ -1,16 +1,18 @@
-const Asena = require('../events');
+const { MessageType, Mimetype } = require("@adiwajshing/baileys");
+const Asena = require("../Utilis/events");
+// const config = require('../config');
+const moment = require("moment");
+const {
+  getName,
+  getBuffer,
+  getJson,
+  IdentifySong,
+} = require("../Utilis/download");
+const Language = require("../language");
+const Lang = Language.getString("updown");
+const { emoji } = require("../Utilis/Misc");
+const { audioCut } = require("../Utilis/fFmpeg");
 
-const {MessageType,Mimetype} = require('@adiwajshing/baileys');
-
-const fs = require('fs');
-
-const axios = require('axios');
-
-const FormData = require('form-data');
-
-const ffmpeg = require('fluent-ffmpeg');
-
-const FIND_DESC = "Finds the Song"
 
 Asena.addCommand(
   { pattern: "find", fromMe: true, desc: Lang.FIND_DESC },
