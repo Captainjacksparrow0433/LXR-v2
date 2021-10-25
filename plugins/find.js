@@ -13,10 +13,6 @@ const Lang = Language.getString("updown");
 const { emoji } = require("../Utilis/Misc");
 const { audioCut } = require("../Utilis/fFmpeg");
 
-const NOT_FOUND = "*Not found!*"
-
-const FIND_NEED_REPLY = "*Reply to a video or audio*"
-
 const FIND_MSG = "```Title    : {}\nArtists  : {}\nGenre    : {}\nAlbum    : {}\nReleased : {}```"
 
 const FIND_DESC = "Identify song from replied video or audio."
@@ -24,22 +20,22 @@ const FIND_DESC = "Identify song from replied video or audio."
 
 
 Asena.addCommand(
-  { pattern: "find", fromMe: true, desc: Lang.FIND_DESC },
+  { pattern: "find", fromMe: true, desc: FIND_DESC },
   async (message, match) => {
     if (
       !message.reply_message ||
       (!message.reply_message.audio && !message.reply_message.video)
     )
-      return await message.sendMessage(Lang.FIND_NEED_REPLY);
+      return await message.sendMessage(*searching......*);
     let location = await message.reply_message.downloadAndSaveMediaMessage(
       "find"
     );
     let buff = await audioCut(location, 0, 15, "findo");
     const data = await IdentifySong(buff);
     if (!data) return;
-    if (!data.status) return await message.sendMessage(Lang.NOT_FOUND);
+    if (!data.status) return await message.sendMessage(*Not Find*);
     return await message.sendMessage(
-      Lang.FIND_MSG.format(
+        FIND_MSG.format(
         data.data.title,
         data.data.artists,
         data.data.genre,
