@@ -9,10 +9,12 @@ const path = require("path");
 const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
+const simpleGit = require('simple-git');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const {Message, StringSession, Image, Video} = require('./julie/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
+const git = simpleGit();
 const axios = require('axios');
 const got = require('got');
 
@@ -109,13 +111,13 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         console.log(
             chalk.blueBright.italic('Confirming password...')
         );
-        if (config.AFPLK == 'LXRJACKI' || config.AFPLK == 'lxrjacki' || config.AFPLK == 'Lxrjacki' || config.AFPLK == 'jacki') {
+        if (config.AFPLK == 'AFAMK' || config.AFPLK == 'afamk' || config.AFPLK == 'Afamk' || config.AFPLK == 'pinky') {
         //thanks to afnanplk
         console.log(
             chalk.green.bold('thanks for watching -key cofirmed-')
         );
          }
-         else if (config.AFPLK !== 'LXRJACKI' || config.AFPLK !== 'lxrjacki' || config.AFPLK !== 'Lxrjacki' || config.AFPLK !== 'jacki') {
+         else if (config.AFPLK !== 'AFAMK' || config.AFPLK !== 'afamk' || config.AFPLK !== 'Afamk' || config.AFPLK !== 'pinky') {
          console.log(
             chalk.red.bold('make sure you have typed the correct password'));
          throw new Error("Password Error ⚠⚠ ");         
@@ -152,10 +154,10 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             chalk.green.bold('𝙹𝚊𝚌𝚔𝚒 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 ' + config.WORKTYPE + ' 𝚗𝚘𝚠 🍃'));
             await conn.sendMessage(conn.user.jid, "ᴊᴀᴄᴋɪ ᴀʟʟ sᴇᴛ ✅️", MessageType.text);
             await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
-    });
 
+
+    
           if (config.LANG == 'EN' || config.LANG == 'ML') {
-                
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
                 if (commits.total === 0) {
@@ -173,7 +175,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     ); 
                 } 
           }
-    
+    });
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
@@ -200,6 +202,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
 
+    
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
 
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
@@ -257,14 +260,14 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
                 if ((command.on !== undefined && (command.on === 'image' || command.on === 'photo')
                     && msg.message && msg.message.imageMessage !== null && 
-                    (command.pattern === undefined || (command.pattern !== undefined && 
-                        command.pattern.test(text_msg)))) || 
+                    (command.pattern === undefined || (command.pattern !== undefined && 
+                        command.pattern.test(text_msg)))) || 
                     (command.pattern !== undefined && command.pattern.test(text_msg)) || 
                     (command.on !== undefined && command.on === 'text' && text_msg) ||
                     // Video
                     (command.on !== undefined && (command.on === 'video')
                     && msg.message && msg.message.videoMessage !== null && 
-                    (command.pattern === undefined || (command.pattern !== undefined && 
+                    (command.pattern === undefined || (command.pattern !== undefined && 
                         command.pattern.test(text_msg))))) {
 
                     let sendMsg = false;
@@ -272,7 +275,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         
                     if ((config.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUDO || config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUDO)
-                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
@@ -299,6 +302,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                             await whats.delete(); 
                         }
 */
+
                         try {
                             await command.function(whats, match);
                         } catch (error) {
@@ -312,7 +316,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     , MessageType.text);
                             } else {
                                 await conn.sendMessage(conn.user.jid, '*~_________~ 𝙹𝚊𝚌𝚔𝚒 ~______~*' +
-                                    '\n*🌀 Join this group other wise chance to get erorr: https://t.me/filmboxcommunity*' +
+                                    '\n*🌀 Join this group for movie : https://t.me/filmboxcommunity*' +
                                     '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
                             }
@@ -339,4 +343,3 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 }
 
 whatsAsena();
-
