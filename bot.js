@@ -18,10 +18,8 @@ const git = simpleGit();
 const axios = require('axios');
 const got = require('got');
 
-
-const Language = require('../language');
+const Language = require('./language');
 const Lang = Language.getString('updater');
-
 
 // Sql
 const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
@@ -157,11 +155,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
         console.log(
             chalk.green.bold('𝙹𝚊𝚌𝚔𝚒 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 ' + config.WORKTYPE + ' 𝚗𝚘𝚠 🍃'));
-            await conn.sendMessage(conn.user.jid, "ᴊᴀᴄᴋɪ ᴀʟʟ sᴇᴛ ✅️", MessageType.text);
-            await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
-
-             await new Promise(r => setTimeout(r, 500));
-
           if (config.LANG == 'EN' || config.LANG == 'ML') {
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -321,7 +314,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     , MessageType.text);
                             } else {
                                 await conn.sendMessage(conn.user.jid, '*~_________~ 𝙹𝚊𝚌𝚔𝚒 ~______~*' +
-                                    '\n*🌀 Join this group for movie : https://t.me/filmboxcommunity*' +
+                                    '\n*🌀 join this group for movie: https://t.me/filmboxcommunity*' +
                                     '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
                             }
