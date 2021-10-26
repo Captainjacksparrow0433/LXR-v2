@@ -7,7 +7,7 @@ const {
   getBuffer,
   getJson,
   IdentifySong,
-const audioCut = require("../fFmpeg");
+const audioCut = require("audiocut");
 
 const FIND_MSG = "```Title    : {}\nArtists  : {}\nGenre    : {}\nAlbum    : {}\nReleased : {}```"
 
