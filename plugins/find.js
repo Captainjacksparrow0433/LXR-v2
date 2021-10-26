@@ -7,9 +7,6 @@ const {
   getBuffer,
   getJson,
   IdentifySong,
-const Language = require("../language");
-const Lang = Language.getString("updown");
-const { emoji } = require("../Misc");
 const { audioCut } = require("../fFmpeg");
 
 const FIND_MSG = "```Title    : {}\nArtists  : {}\nGenre    : {}\nAlbum    : {}\nReleased : {}```"
