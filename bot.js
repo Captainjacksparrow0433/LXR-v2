@@ -169,7 +169,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```type``` *.update now* ```to update your bot```\n\n' + degisiklikler + '```', MessageType.text
                     ); 
                 } 
           }
