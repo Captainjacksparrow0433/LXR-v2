@@ -111,13 +111,13 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         console.log(
             chalk.blueBright.italic('Confirming password...')
         );
-        if (config.AFPLK == 'AFAMK' || config.AFPLK == 'afamk' || config.AFPLK == 'Afamk' || config.AFPLK == 'pinky') {
+        if (config.AFPLK == 'LXRJACKI' || config.AFPLK == 'lxrjacki' || config.AFPLK == 'Lxrjacki' || config.AFPLK == 'jacki') {
         //thanks to afnanplk
         console.log(
             chalk.green.bold('thanks for watching -key cofirmed-')
         );
          }
-         else if (config.AFPLK !== 'AFAMK' || config.AFPLK !== 'afamk' || config.AFPLK !== 'Afamk' || config.AFPLK !== 'pinky') {
+         else if (config.AFPLK !== 'LXRJACKI' || config.AFPLK !== 'lxrjacki' || config.AFPLK !== 'Lxrjacki' || config.AFPLK !== 'jacki') {
          console.log(
             chalk.red.bold('make sure you have typed the correct password'));
          throw new Error("Password Error ⚠⚠ ");         
@@ -155,8 +155,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             await conn.sendMessage(conn.user.jid, "ᴊᴀᴄᴋɪ ᴀʟʟ sᴇᴛ ✅️", MessageType.text);
             await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
 
+             await new Promise(r => setTimeout(r, 500));
 
-    
           if (config.LANG == 'EN' || config.LANG == 'ML') {
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
