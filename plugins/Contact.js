@@ -1,28 +1,34 @@
-const Ktb = require('../events');
+/*codded by Abin
+Work only with Jack QR*/
+
+const Jacki = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
 const Config = require('../config')
-Ktb.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
+Jacki.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
 
-//coded by saidali
+//coded by Abin
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Abin [꧁LXR=Jack࿐]\n' // full name
-            + 'ORG:꧁LXR=Jack࿐;\n' // 
+            + 'FN:Abin [꧁Boss࿐]\n' // full name
+            + 'ORG:꧁Boss࿐;\n' // 
             + 'TEL;type=CELL;type=VOICE;waid=919061103727:+91 9061103727\n' // WhatsApp ID + phone number
             + 'END:VCARD'
-await message.client.sendMessage(message.jid,{displayname: "Abin [꧁LXR=Jack࿐]", vcard: vcard}, MessageType.contact)
+await message.client.sendMessage(message.jid,{displayname: "Abin [꧁Boss࿐]", vcard: vcard}, MessageType.contact)
 
 }));
 
-Ktb.addCommand({ pattern: 'owner ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
+Jacki.addCommand({ pattern: 'owner ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Abin [꧁LXR=Jack࿐]\n' // full name
-            + 'ORG:꧁LXR=Jack࿐;\n' // 
+            + 'FN:Abin [꧁Boss࿐]\n' // full name
+            + 'ORG:꧁Boss࿐;\n' // 
             + 'TEL;type=CELL;type=VOICE;waid=919061103727:+91 9061103727\n' // WhatsApp ID + phone number
             + 'END:VCARD'
-await message.client.sendMessage(message.jid,{displayname: "Abin [꧁LXR=Jack࿐]", vcard: vcard}, MessageType.contact)
+await message.client.sendMessage(message.jid,{displayname: "Abin [꧁Boss࿐]", vcard: vcard}, MessageType.contact)
 }))
+
+
+//Codded by Abin
