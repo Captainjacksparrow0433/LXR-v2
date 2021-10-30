@@ -28,9 +28,6 @@ Project created by <a href="https://github.com/Captainjacksparrow0433">ᴅͥᴇ�
 <div align="center"> 
 
 
-##  password 👇
-
-Lxrjacki
 
 ### Bot 👇
 
