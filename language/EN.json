@@ -201,7 +201,7 @@
             "RATING": "RATING",
             "UPLOADING_SONG": "*Uploading*",
             "VIDEO_DESC": "Downloads video from YouTube.",
-            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video yt link```",
+            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video +yt link```",
             "DOWNLOADING_VIDEO": "*Downloading*",
             "UPLOADING_VIDEO": "*Uploading*",
             "LOADING": "*Downloading video*",
