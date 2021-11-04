@@ -1,8 +1,4 @@
-/* codded by Abin
-reedited by Jacki
-use this git under copyright
-dont change credit
-*/
+/*codded by Abin*/
 
 const Jacki= require('../events');
 const config = require('../config');
