@@ -221,6 +221,8 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 │   ❏🤪Jacki🤪❏
 ╰──────────────────╯
 `})
+
+}));
  
 Asena.addCommand({pattern: 'menu', fromMe: false, desc: 'it send bot menu'}, (async (message, match) => {
 
@@ -250,6 +252,6 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 
 /*Codded by - Abin*/
 
-        }
-    }));
-}
+`})
+
+}));
