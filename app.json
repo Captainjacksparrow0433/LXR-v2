@@ -113,7 +113,7 @@
         "EMOJI_COMMAND": {
             "description": "You can change Command list emojis.)",
             "required": true,
-            "value": "🃏"
+            "value": "🗣️"
         },
         "EMOJI_DESCRIPTION": {
             "description": "You can change command list emojis.)",
