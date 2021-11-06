@@ -123,6 +123,7 @@ if (config.STICKERP == 'true') stickerp = 'On'
 if (config.STICKERP == 'false') stickerp = 'Off'
 if (config.BGMFILTER == 'true') bgm_filter = 'On'
 if (config.BGMFILTER == 'false') bgm_filter = 'Off'
+
 if (config.TALKING_PINKY == 'true') pinky = 'On'
 if (config.TALKING_PINKY == 'false') pinky = 'Off'
 if (config.AUTOBİO == 'true') auto_bio = 'On'
@@ -141,7 +142,7 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 ┣𝕾⃝🌺 *Antilink* : ` + antilink + `
 ┣𝕾⃝🌺 *ғᴜʟʟ ᴇᴠᴀ* : ` + pinky + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
-┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɢᴍ* : ` + bgm_filter + `
+┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɢᴍ* : ` + pinky + `
 ┣𝕾⃝🌺 *ʙɢᴍ ɢᴇᴀʀ* : ` + config.GEAR + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ sᴛɪᴄᴋᴇʀ* : ` + stickerp + `
 ┣𝕾⃝🌺 *ᴍᴏᴅᴇ* : ᴘᴜʙʟɪᴄ
