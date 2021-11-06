@@ -105,6 +105,10 @@ Asena.addCommand({pattern: 'look', fromMe: false, desc: 'it send bot menu'}, (as
      
     var pinky = ''
 
+    var bgm = ''
+
+    var stick = ''
+
     var auto_bio = ''
 
     var language = ''
@@ -114,6 +118,11 @@ if (hrs >= 12 && hrs <= 17) wish = '*ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 🌞*'
 if (hrs >= 17 && hrs <= 19) wish = '*ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌥*'
 if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
 
+
+if (config.STICKERP == 'true') stick = 'On'
+if (config.STICKERP == 'false') stick = 'Off'
+if (config.BGMFILTER == 'true') bgm = 'On'
+if (config.BGMFILTER == 'false') bgm = 'Off'
 if (config.TALKING_PINKY == 'true') pinky = 'On'
 if (config.TALKING_PINKY == 'false') pinky = 'Off'
 if (config.AUTOBİO == 'true') auto_bio = 'On'
@@ -132,6 +141,9 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 ┣𝕾⃝🌺 *Antilink* : ` + antilink + `
 ┣𝕾⃝🌺 *ғᴜʟʟ ᴇᴠᴀ* : ` + pinky + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
+┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɢᴍ* : ` + bgm + `
+┣𝕾⃝🌺 *ʙɢᴍ ɢᴇᴀʀ* : ` + config.GEAR + `
+┣𝕾⃝🌺 *ᴀᴜᴛᴏ sᴛɪᴄᴋᴇʀ* : ` + stick + `
 ┣𝕾⃝🌺 *ᴍᴏᴅᴇ* : ᴘᴜʙʟɪᴄ
 ┣𝕾⃝🌺 *ᴘʀᴇғɪx* : *. ; !*
 │
