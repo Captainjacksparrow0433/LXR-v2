@@ -1,12 +1,12 @@
 /*codded by - Abin*/
 
-const Jacki= require('../events');
+const Asena= require('../events');
 const config = require('../config');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const hrs = new Date().getHours({ timeZone: 'Asia/Kolkata' })
 
-Jacki.addCommand({pattern: 'look', fromMe: false, desc: 'it send bot menu'}, (async (message, match) => {
+Asena.addCommand({pattern: 'look', fromMe: false, desc: 'it send bot menu'}, (async (message, match) => {
 
     var r_text = new Array ();
     
@@ -222,7 +222,7 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 ╰──────────────────╯
 `})
  
-Jacki.addCommand({pattern: 'menu', fromMe: false, desc: 'it send bot menu'}, (async (message, match) => {
+Asena.addCommand({pattern: 'menu', fromMe: false, desc: 'it send bot menu'}, (async (message, match) => {
 
 
     var antilink = ''
