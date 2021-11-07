@@ -7,7 +7,7 @@ const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
 const Config = require('../config')
-Jacki.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
+Jacki.addCommand({ pattern: 'number ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
 
 //coded by Abin
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
