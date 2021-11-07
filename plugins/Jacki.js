@@ -107,9 +107,9 @@ Jacki.addCommand({pattern: 'look', fromMe: false, desc: 'it send bot menu'}, (as
 
     var auto_bio = ''
 
-    var bgm_filter = ''
+    var auto_bgm = ''
 
-    var stickerp = ''
+    var auto_sck = ''
 
     var language = ''
 
@@ -126,10 +126,10 @@ if (config.AUTOBİO == 'true') auto_bio = 'On'
 if (config.AUTOBİO == 'false') auto_bio = 'Off'
 if (config.ANTİLİNK == 'true') antilink = 'On'
 if (config.ANTİLİNK == 'false') antilink = 'Off'
-if (config.STICKERP == 'true') stickerp = 'On'
-if (config.STICKERP == 'false') stickerp = 'Off'
-if (config.BGMFILTER == 'true') bgm_filter = 'On'
-if (config.BGMFILTER == 'false') bgm_filter = 'Off'
+if (config.STICKERP == 'true') auto_sck = 'On'
+if (config.STICKERP == 'false') auto_sck = 'Off'
+if (config.BGMFILTER == 'true') auto_bgm = 'On'
+if (config.BGMFILTER == 'false') auto_bgm = 'Off'
 
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
@@ -143,9 +143,9 @@ if (config.BGMFILTER == 'false') bgm_filter = 'Off'
 ┣𝕾⃝🌺 *Antilink* : ` + antilink + `
 ┣𝕾⃝🌺 *ғᴜʟʟ ᴇᴠᴀ* : ` + pinky + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
-┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɢᴍ* : ` + pinky + `
+┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɢᴍ* : ` + auto_bgm + `
 ┣𝕾⃝🌺 *ʙɢᴍ ɢᴇᴀʀ* : ` + config.GEAR + `
-┣𝕾⃝🌺 *ᴀᴜᴛᴏ sᴛɪᴄᴋᴇʀ* : ` + stickerp + `
+┣𝕾⃝🌺 *ᴀᴜᴛᴏ sᴛɪᴄᴋᴇʀ* : ` + auto_sck + `
 ┣𝕾⃝🌺 *ᴍᴏᴅᴇ* : ᴘᴜʙʟɪᴄ
 ┣𝕾⃝🌺 *ᴘʀᴇғɪx* : *. ; !*
 │
