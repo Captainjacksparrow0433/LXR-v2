@@ -105,11 +105,11 @@ Jacki.addCommand({pattern: 'look', fromMe: false, desc: 'it send bot menu'}, (as
      
     var pinky = ''
 
+    var auto_bio = ''
+
     var bgm_filter = ''
 
     var stickerp = ''
-
-    var auto_bio = ''
 
     var language = ''
 
@@ -118,11 +118,7 @@ if (hrs >= 12 && hrs <= 17) wish = '*ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 🌞*'
 if (hrs >= 17 && hrs <= 19) wish = '*ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌥*'
 if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
 
-
-if (config.STICKERP == 'true') stickerp = 'On'
-if (config.STICKERP == 'false') stickerp = 'Off'
-if (config.BGMFILTER == 'true') bgm_filter = 'On'
-if (config.BGMFILTER == 'false') bgm_filter = 'Off'
+ 
 
 if (config.TALKING_PINKY == 'true') pinky = 'On'
 if (config.TALKING_PINKY == 'false') pinky = 'Off'
@@ -130,6 +126,11 @@ if (config.AUTOBİO == 'true') auto_bio = 'On'
 if (config.AUTOBİO == 'false') auto_bio = 'Off'
 if (config.ANTİLİNK == 'true') antilink = 'On'
 if (config.ANTİLİNK == 'false') antilink = 'Off'
+if (config.STICKERP == 'true') stickerp = 'On'
+if (config.STICKERP == 'false') stickerp = 'Off'
+if (config.BGMFILTER == 'true') bgm_filter = 'On'
+if (config.BGMFILTER == 'false') bgm_filter = 'Off'
+
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
    ` + config.BOT + `
