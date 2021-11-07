@@ -126,6 +126,9 @@ if (config.AUTOBİO == 'true') auto_bio = 'On'
 if (config.AUTOBİO == 'false') auto_bio = 'Off'
 if (config.ANTİLİNK == 'true') antilink = 'On'
 if (config.ANTİLİNK == 'false') antilink = 'Off'
+
+
+
 if (config.STICKERP == 'true') auto_sck = 'On'
 if (config.STICKERP == 'false') auto_sck = 'Off'
 if (config.BGMFILTER == 'true') auto_bgm = 'On'
@@ -145,7 +148,7 @@ if (config.BGMFILTER == 'false') auto_bgm = 'Off'
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɢᴍ* : ` + auto_bgm + `
 ┣𝕾⃝🌺 *ʙɢᴍ ɢᴇᴀʀ* : ` + config.GEAR + `
-┣𝕾⃝🌺 *ᴀᴜᴛᴏ sᴛɪᴄᴋᴇʀ* : ` + auto_sck + `
+┣𝕾⃝🌺 *ᴀᴜᴛᴏ sᴛɪᴄᴋᴇʀ* : ` + config.STICKERP + `
 ┣𝕾⃝🌺 *ᴍᴏᴅᴇ* : ᴘᴜʙʟɪᴄ
 ┣𝕾⃝🌺 *ᴘʀᴇғɪx* : *. ; !*
 │
