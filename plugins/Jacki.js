@@ -146,7 +146,7 @@ if (config.BGMFILTER == 'false') auto_bgm = 'Off'
 ┣𝕾⃝🌺 *Antilink* : ` + antilink + `
 ┣𝕾⃝🌺 *ғᴜʟʟ ᴇᴠᴀ* : ` + pinky + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
-┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɢᴍ* : ` + auto_bgm + `
+┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɢᴍ* : ` + config.BGMFILTER + `
 ┣𝕾⃝🌺 *ʙɢᴍ ɢᴇᴀʀ* : ` + config.GEAR + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ sᴛɪᴄᴋᴇʀ* : ` + config.STICKERP + `
 ┣𝕾⃝🌺 *ᴍᴏᴅᴇ* : ᴘᴜʙʟɪᴄ
