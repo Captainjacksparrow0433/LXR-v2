@@ -142,7 +142,7 @@ if (config.BGMFILTER == 'false') auto_bgm = 'Off'
 │ ʜᴇʏ ᴜsᴇʀ ` + wish + `
 │         *⌚` + time + `*
 │
-┣𝕾⃝🌺 *ᴅᴇᴠᴇʟᴏʟᴇʀ* : ᴀʙɪɴ 
+┣𝕾⃝🌺 *ᴅᴇᴠᴇʟᴏʟᴇʀ* : ` + config.ABIN + `
 ┣𝕾⃝🌺 *Antilink* : ` + antilink + `
 ┣𝕾⃝🌺 *ғᴜʟʟ ᴇᴠᴀ* : ` + pinky + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
