@@ -96,6 +96,25 @@
             "required": true,
             "value": "true"
         },
+        "OWNER_NAME": {
+            "description": "reply for .owner ! give your details, Use => default, to change back.",
+            "required": false,
+            "value": "Abin"
+        },
+        "OWNER_NUMBER": {
+            "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
+            "required": false,
+            "value": "919061103727"
+        },
+        "NUMBER": {
+            "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
+            "required": false,
+            "value": "919061103727"
+        },
+        "DEPLOYER": {
+            "description": "enter your name here",
+            "required": false
+        },
         "HEROKU_API_KEY": {
             "description": "Heroku API Key.",
             "required": true
