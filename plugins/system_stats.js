@@ -76,7 +76,7 @@ var i = Math.floor(31*Math.random())
         
         let pp
         try { pp = await message.client.getProfilePicture(message.jid.includes('-') ? message.data.participant : message.jid ); } catch { pp = await message.client.getProfilePicture(); }
-        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => { await message.client.sendMessage(message.jid, res.data, MessageType.image, { caption:  ᴍᴏᴅᴇ : `+ Config.WORKTYPE +` \n Config.ALIVEMSG.replace('{pp}', '').replace('{qt}', r_text[i])}); });
+        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => { await message.client.sendMessage(message.jid, res.data, MessageType.image, { caption: Config.ALIVEMSG.replace('{pp}', '').replace('{qt}', r_text[i])}); });
 	}    
 	   else {
 		   
@@ -97,7 +97,7 @@ var i = Math.floor(31*Math.random())
 
         var plk_alive = await axios.get(`${a_plk[p]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer(plk_alive.data), MessageType.image, {mimetype: Mimetype.png, caption: ᴍᴏᴅᴇ : `+ Config.WORKTYPE +` \n Config.ALIVEMSG.replace('{qt}', r_text[i])})
+        await message.client.sendMessage(message.jid, Buffer(plk_alive.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG.replace('{qt}', r_text[i])})
 	   }
     }));
 
