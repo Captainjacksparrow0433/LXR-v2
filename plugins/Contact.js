@@ -7,16 +7,16 @@ const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
 const Config = require('../config')
-Jacki.addCommand({ pattern: 'number ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
+Jacki.addCommand({ pattern: 'boss ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
 
 //coded by Abin
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Abin [꧁Boss࿐]\n' // full name
+            + 'FN:Akku [꧁Boss࿐]\n' // full name
             + 'ORG:꧁Boss࿐;\n' // 
-            + 'TEL;type=CELL;type=VOICE;waid=919061103727:+91 9061103727\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=918590403955:+91 8590403955\n' // WhatsApp ID + phone number
             + 'END:VCARD'
-await message.client.sendMessage(message.jid,{displayname: "Abin [꧁Boss࿐]", vcard: vcard}, MessageType.contact)
+await message.client.sendMessage(message.jid,{displayname: "Akku [꧁Boss࿐]", vcard: vcard}, MessageType.contact)
 
 }));
 
