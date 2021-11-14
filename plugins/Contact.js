@@ -30,5 +30,15 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
 await message.client.sendMessage(message.jid,{displayname: "Abin [꧁Boss࿐]", vcard: vcard}, MessageType.contact)
 }))
 
+Jacki.addCommand({ pattern: 'boss ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
 
-//Codded by Abin
+//coded by Abin
+const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
+            + 'VERSION:3.0\n' 
+            + 'FN:Arjun [꧁Boss࿐]\n' // full name
+            + 'ORG:꧁Boss࿐;\n' // 
+            + 'TEL;type=CELL;type=VOICE;waid=919567716422:+91 9567716422\n' // WhatsApp ID + phone number
+            + 'END:VCARD'
+await message.client.sendMessage(message.jid,{displayname: "Arjun [꧁Boss࿐]", vcard: vcard}, MessageType.contact)
+
+}));
