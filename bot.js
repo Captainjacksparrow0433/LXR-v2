@@ -1,4 +1,4 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C)2020 Yusuf Usta.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
@@ -102,7 +102,6 @@ async function whatsAsena () {
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-
 ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     });
     
@@ -111,7 +110,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         console.log(
             chalk.green.bold('✅ Login successful!')
         );
-        
 
         console.log(
             chalk.blueBright.italic('⬇️ Installing external plugins...')
@@ -267,7 +265,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             }
           }         
             return;                               
-    }
+    }         
 
         events.commands.map(
             async (command) =>  {
@@ -364,5 +362,3 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         }
     }
 }
-
-whatsAsena();
