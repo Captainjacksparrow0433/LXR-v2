@@ -91,6 +91,7 @@ async function whatsAsena () {
             chalk.blueBright.italic('✅ Login information updated!')
         );
 
+
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
             await WhatsAsenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
@@ -102,6 +103,8 @@ async function whatsAsena () {
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
+
+
 ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     });
     
