@@ -33,7 +33,7 @@ module.exports = {
     PHONE: process.env.NUMBER === undefined ? '+919061103727' : process.env.NUMBER,   
     ABIN: process.env.DEPLOYER === undefined ? 'ᴀʙɪɴ ' : process.env.DEPLOYER,
     LG_LOGO: process.env.LG_LOGO === undefined ? 'https://telegra.ph/file/df220686268d9ab7badfe.jpg' : process.env.LG_LOGO,
-    LOGO_NAME: process.env.LOGO_NAME === undefined ? 'LXR JACK⁩' : process.env.LOGO_NAME,
+    LOGO_NAME: process.env.LOGO_NAME === undefined ? 'Abin⁩' : process.env.LOGO_NAME,
     MENTION: process.env.TAG_REPLY === undefined ? '919061103727@s.whatsapp.net' : process.env.TAG_REPLY,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
