@@ -36,6 +36,16 @@
             "required": true,
             "value": "false"
         },
+        "LG_LOGO": {
+            "description": "LOGO list message image link(https://telegra.ph/)link.",
+            "required": true,
+            "value": "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg"
+        },
+        "LOGO_NAME": {
+            "description": "Set the logo list name",
+            "required": true,
+            "value": "Jack Bot"
+        },
         "WELCOME": {
             "description": "You can select welcome as gif/pp",
             "required": false,
