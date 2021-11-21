@@ -45,6 +45,16 @@
             "description": "Set the logo list name",
             "required": true,
             "value": "Jack Bot"
+        }, 
+        "FIRST_BOTTON": {
+            "description": "Set the alive message two name",
+            "required": true,
+            "value": "Hii"
+        },
+        "SECOND_BOTTON": {
+            "description": "Set the Alive message first name",
+            "required": true,
+            "value": "Hello"
         },
         "WELCOME": {
             "description": "You can select welcome as gif/pp",
@@ -148,6 +158,11 @@
             "description": "You can change command list emojis.)",
             "required": true,
             "value": "🦸‍♂️"
+        },
+        "EMOJI_EXAMPLE": {
+            "description": "You can change command list emojis.)",
+            "required": true,
+            "value": "💬"
         },
         "EMOJI_WARNING": {
             "description": "You can change command list emojis.)",
