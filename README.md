@@ -28,11 +28,6 @@ Project created by <a href="https://github.com/Captainjacksparrow0433">ᴅͥᴇ�
 <div align="center"> 
 
 
-
-### Bot 👇
-
-http://wa.me/919074681684
-
   ### Simple Method
   
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Captainjacksparrow0433/LXR-v2) 
