@@ -41,14 +41,14 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
 
      Julie.addCommand({pattern: 'wt ?(.*)', fromMe: true, desc: W_dsc, usage: '.wt public / private' }, (async (message, match) => {
-        if (match[1] == 'public') {
+        if (match[1] == 'pub') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
                         ['WORK_TYPE']: 'public'
                     } 
                 });
                 await message.sendMessage(WT_public)
-        } else if (match[1] == 'private') {
+        } else if (match[1] == 'pr') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
                         ['WORK_TYPE']: 'private'
