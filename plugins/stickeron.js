@@ -40,7 +40,6 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
 
 
-     }
      Julie.addCommand({pattern: 'wt ?(.*)', fromMe: true, desc: W_dsc, usage: '.wt public / private' }, (async (message, match) => {
         if (match[1] == 'public') {
                 await heroku.patch(baseURI + '/config-vars', { 
