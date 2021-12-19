@@ -11,6 +11,8 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
    var l_dsc = ''
+    var WT_private = ''
+    vat WT_public = ''
     var BGM_on = ''
     var BGM_off = ''
     var STICKER_on = ''
@@ -19,6 +21,9 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     if (config.LANG == 'EN') {
         l_dsc = 'turn on and turn off bgm. -bot owner command'
         Y_dsc = 'turn on and turn off bgm. -bot owner command'
+        W_dsc = 'shift working mode'
+        WT_private = 'Now working on private mode'
+        WT_public = 'Now working on public mode'
         BGM_on = 'bgm option turned on!'
         BGM_off = 'bgm option turned off'
         STICKER_on = 'STICKER option turned on!'
@@ -32,6 +37,27 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         BGM_off = 'bgm ഓപ്ഷൻ ഓഫാക്കി'
         STICKER_on = 'STICKER option turned on!'
         STICKER_off = 'STICKER option turned off'
+
+
+
+     }
+     Julie.addCommand({pattern: 'wt ?(.*)', fromMe: true, desc: W_dsc, usage: '.wt public / private' }, (async (message, match) => {
+        if (match[1] == 'public') {
+                await heroku.patch(baseURI + '/config-vars', { 
+                    body: { 
+                        ['WORK_TYPE']: 'public'
+                    } 
+                });
+                await message.sendMessage(WT_public)
+        } else if (match[1] == 'private') {
+                await heroku.patch(baseURI + '/config-vars', { 
+                    body: { 
+                        ['WORK_TYPE']: 'private'
+                    } 
+                });
+                await message.sendMessage(WT_private)
+        }
+    }));
         
     }
     Julie.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
