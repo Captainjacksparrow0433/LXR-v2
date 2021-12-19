@@ -12,7 +12,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
    var l_dsc = ''
     var WT_private = ''
-    vat WT_public = ''
+    var WT_public = ''
     var BGM_on = ''
     var BGM_off = ''
     var STICKER_on = ''
