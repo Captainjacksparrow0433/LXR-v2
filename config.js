@@ -52,6 +52,7 @@ module.exports = {
     LOGOSK: process.env.ALL_IMG === undefined ? 'https://telegra.ph/file/df220686268d9ab7badfe.jpg' : process.env.ALL_IMG,
     SKDL: process.env.DIALOGUE === undefined ? '❤️‍🔥 Muthe i love you ❤️‍🔥' : process.env.DIALOGUE,
     JID: process.env.VERIFIED === undefined ? '0@s.whatsapp.net' : process.env.VERIFIED,
+    SKV: process.env.V_HEADER === undefined ? '*YOUR HEADER HERE*' : process.env.V_HEADER,
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGU,
