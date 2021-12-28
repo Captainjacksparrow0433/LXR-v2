@@ -1,11 +1,11 @@
-const Asena = require("../Utilis/events")
-const { MessageType, Mimetype } = require("@adiwajshing/baileys")
-const { getBuffer, igStory, downVideo } = require("../Utilis/download")
-const { instagram } = require("../Utilis/Misc")
-const Language = require("../language")
-const Lang = Language.getString("insta")
+const Asena = require('../events')
+const {MessageType, Mimetype} = require('@adiwajshing/baileys')
+const {getBuffer, igStory, downVideo} = require('../raganork')
+const instagram = require('../buffer')
+const Language = require('../language')
+const Lang = Language.getString('insta')
 
-Asena.addCommand({ pattern: "insta ?(.*)",fromMe: false,desc: Lang.INSTA_DESC,}, async (message, match) => {
+Asena.addCommand({ pattern: 'insta ?(.*)',fromMe: false,desc: Lang.INSTA_DESC,}, async (message, match) => {
     
     match = match || message.reply_message.text
     if (!match || !/instagram.com/.test(match))
