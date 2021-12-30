@@ -58,7 +58,7 @@
         "insta": {
             "INSTA_DESC": "Download from instagram like post, igtv, reels\n.insta url or reply to a url",
             "NEED_REPLY": "*Give me a url.*",
-            "DOWNLOADING": "```Downloading...```",
+            "DOWNLOADING": "*𝙲𝚘𝚗𝚗𝚎𝚌𝚝𝚒𝚗𝚐 𝚃𝚘 𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖*",
             "STORY_DESC": "Download stories of given username\n.story username or reply to a username or story url",
             "DOWNLOADING_STORY": "```Donwloading {} stories```",
             "NOT_FOUND": "*Not found!*",
