@@ -47,7 +47,7 @@ Asena.addCommand({pattern: 'shazam', fromMe: true, desc: FIND_DESC }, (async (me
 
 else if (Config.WORKTYPE == 'public') {
     
-    Asena.addCommand({pattern: 'shazam', fromMe: false, desc: FIND_DESC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'find', fromMe: false, desc: FIND_DESC }, (async (message, match) => {
     if (message.reply_message === false) return await message.client.sendMessage(message.jid, '*Responda a algún audio mp3 para realizar la búsqueda*', MessageType.text);
     var filePath = await message.client.downloadAndSaveMediaMessage({
         key: {
