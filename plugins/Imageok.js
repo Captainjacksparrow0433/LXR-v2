@@ -1,18 +1,40 @@
 const Asena = require('../events');
 const { getBuffer } = require('axios');
 const { ePhotoDownload } = require('fs');
-const { MessageType } = require('@adiwajshing/baileys');
-const setting = require('../config');
+const thiccysapi = require('textmaker-thiccy'); // Import NPM Package
 
-  let ok = setting.WORKTYPE == 'public' ? false : true
-Asena.addCommand({ pattern: 'sed ?(.*)', fromMe: true, desc: "Sad text effect" }, async (message, match) => {
-        if (match == '') return await message.sendMessage("Give me text")
-        const effect_url = "https://en.ephoto360.com/write-text-on-wet-glass-online-589.html"
-        const {status, url} = await ePhotoDownload(effect_url, match)
-        if(!status)return
-        const { buffer } = await getBuffer(url)
-        if (buffer !== false) return await message.sendMessage(buffer, {}, MessageType.image)
+const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
+const fs = require('fs');
+const Config = require('../config')
+const axios = require('axios')
+const request = require('request');
+const os = require('os');
+var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
+var ggg = Buffer.from(clh.cd, 'base64')
+var ddd = ggg.toString('utf-8')
+clh.pay = ddd
+
+  let wk = Config.WORKTYPE == 'public' ? false : true
+
+Asena.addCommand({pattern: 'bear ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    thiccysapi.textpro("https://en.ephoto360.com/write-text-on-wet-glass-online-589.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/bear.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/bear.jpg'), MessageType.image, { caption: Config.AFN })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
     });
+}));
    
    Asena.addCommand({ pattern: 'minion ?(.*)', fromMe: true, desc: "Funny minions text effect" }, async (message, match) => {
         if (match == '') return await message.sendMessage("Give me text")
