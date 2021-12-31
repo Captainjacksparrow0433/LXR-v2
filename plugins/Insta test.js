@@ -1,4 +1,4 @@
-const skl = require('../events');
+const jack = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -11,8 +11,8 @@ const need = "*_Need instagram link!_*";
 const need_acc = "*_Need an instagram username!_*";
 const fail = "*_Download failed! Check your link and try again_*";
 const need_acc_s = "*_Need an instagram username and story count!_* \n ```Example: \n .story dqsalmaan/4```";
-let sourav = setting.WORKTYPE == 'public' ? false : true
-skl.addCommand({ pattern: 'insta ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
+let ok = setting.WORKTYPE == 'public' ? false : true
+jack.addCommand({ pattern: 'insta ?(.*)', fromMe: ok,dontAddCommandList: true }, (async (msg, query) => {
     if (query[1] && !msg.reply_message.text) {
     if (!query[1].includes('instagram.com')) return await msg.client.sendMessage(msg.jid, need, MessageType.text, {quoted: msg.data});
     var res = await raganork.query.getPost(query[1],v)
@@ -34,14 +34,14 @@ skl.addCommand({ pattern: 'insta ?(.*)', fromMe: sourav,dontAddCommandList: true
     }
     else return await msg.client.sendMessage(msg.jid, need, MessageType.text, {quoted: msg.data});
     }));
-skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
+jack.addCommand({ pattern: 'ig ?(.*)', fromMe: ok,dontAddCommandList: true }, (async (msg, query) => {
     if (query[1] === '') return await msg.client.sendMessage(msg.jid, need_acc, MessageType.text, {quoted: msg.data});
     var res = await raganork.query.getStalk(query[1])
     var buffer = await raganork.query.skbuffer(res.user.profile_pic_url)
     if (!res) return await msg.client.sendMessage(msg.jid, "_Username invalid!_", MessageType.text, {quoted: msg.data})
     await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: '_Name:_ ' + `${res.user.full_name}` + '\n _Bio:_ *' + `${res.user.biography}`+ '*\n _Private acc:_ *' + `${res.user.is_private} ` + '\n _Followers:_ *' + `${res.user.follower_count}` + '*\n _Following:_ *' + `${res.user.following_count}` + '*\n _Posts:_ *' + `${res.user.media_count}` + '*\n _Verified:_ *' + `${res.user.is_verified} ` + '*\n _IGTV videos:_ *' + `${res.user.total_igtv_videos}` + '*', quoted: msg.data});
     }));
-skl.addCommand({ pattern: 'story ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
+jack.addCommand({ pattern: 'story ?(.*)', fromMe: ok,dontAddCommandList: true }, (async (msg, query) => {
     if (query[1] === '') return await msg.client.sendMessage(msg.jid, need_acc_s, MessageType.text, {quoted: msg.data});
     var user = query[1];
     var res = await raganork.query.getStory(user,v)
