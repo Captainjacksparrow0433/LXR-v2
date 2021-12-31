@@ -18,7 +18,7 @@ const Language = require('./language');
 const Lang = Language.getString('updater');
 
 // Sql
-const DATABASE = Sourav.DATABASE.define('DATABASE', {
+const DATABASE = Sourav.DATABASE.define('Raganork', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
