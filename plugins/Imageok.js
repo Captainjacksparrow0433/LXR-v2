@@ -1,7 +1,8 @@
-const Asena = require('../events')
-const { ePhotoDownload, getBuffer } = require('axios')
-const { MessageType } = require('@adiwajshing/baileys')
-const setting = require('../config')
+const Asena = require('../events');
+const { getBuffer } = require('axios');
+const { ePhotoDownload } = require('fs');
+const { MessageType } = require('@adiwajshing/baileys');
+const setting = require('../config');
 
   let ok = setting.WORKTYPE == 'public' ? false : true
 Asena.addCommand({ pattern: 'sed ?(.*)', fromMe: true, desc: "Sad text effect" }, async (message, match) => {
