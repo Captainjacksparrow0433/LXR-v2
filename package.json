@@ -40,6 +40,8 @@
     "cwebp": "^2.0.5",
     "search-engine-client": "^1.2.6",
     "deepai": "^1.0.17",
+    "get-Buffer": "1.5.5", 
+    "download": "8.0.0", 
     "cwebp-bin": "^6.1.1",
     "tinyurl": "^1.1.7",
     "dotenv": "^8.2.0",
