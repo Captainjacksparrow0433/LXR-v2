@@ -1,6 +1,6 @@
 const Asena = require('../events');
-const { getBuffer } = require('axios');
-const { ePhotoDownload } = require('fs');
+const { getBuffer } = require('get-Buffer');
+const { ePhotoDownload } = require('download');
 const thiccysapi = require('textmaker-thiccy'); // Import NPM Package
 
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
