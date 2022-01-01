@@ -1,5 +1,5 @@
 const Asena = require('../events');
-const { getBuffer } = require('get-Buffer');
+const { getBuffer } = require('get-buffer');
 const { ePhotoDownload } = require('download');
 const thiccysapi = require('textmaker-thiccy'); // Import NPM Package
 
