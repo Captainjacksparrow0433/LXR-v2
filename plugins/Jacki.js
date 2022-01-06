@@ -1,4 +1,4 @@
-/*codded by - Abin*/
+/*codded by - Devil*/
 
 const Jacki= require('../events');
 const config = require('../config');
