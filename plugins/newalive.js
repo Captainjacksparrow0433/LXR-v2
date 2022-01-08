@@ -17,6 +17,8 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
+ if (Config.ALIVETYPE == 'one') {
+
 Jacki.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!credit Abin
     const buttons = [
@@ -34,3 +36,4 @@ Jacki.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (asy
       await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)
 
 }));
+}
