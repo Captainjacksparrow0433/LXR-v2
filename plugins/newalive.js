@@ -65,7 +65,7 @@ var i = Math.floor(31*Math.random())
       ]
       
       const buttonMessage = {
-          contentText: '```'+Config.BOT+'\n\n```'+Config.ALIVEMSG+'\n\n```'r_text[i]'\n',
+          contentText: '```'+Config.BOT+'\n\n```'+Config.ALIVEMSG+'\n',
           footerText: 'Abin ©',
           buttons: buttons,
           headerType: 1
